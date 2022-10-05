@@ -2,6 +2,9 @@
 
 ## Project setup
 ```
+node Version: 14.17.0
+npm version: 8.5.5
+
 npm install
 ```
 
