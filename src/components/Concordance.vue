@@ -62,10 +62,10 @@ export default {
       //setup arrays
       sentenceArrayInit = userCopy.split('\n')
       sentenceArrayInit = sentenceArrayInit.filter(element => element.length > 0)
-
       sentenceArray = sentenceArrayInit.map(element => {
         return element.toLowerCase()
       })
+
       sentenceArray.forEach(element => {
         wordArray = wordArray.concat(this.stringClean(element))
       })
@@ -113,7 +113,7 @@ export default {
     },
 
     stringClean(element) {
-      return element.replace(/[.,/#!$%^&*;:{}=\-_`~()]/g, "").replaceAll("'", '').toLowerCase().split(' ')
+      return element.replace(/[.,/#!$%^&*;:{}=\-_`~()'"]/g, "").replaceAll("'", '').toLowerCase().split(' ')
     }
   }
 }
